@@ -1,9 +1,50 @@
+/***************COLORS***************/
+/*### Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+### Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%)
+
+ */
+
 /* Reset defaults; set f-size to 10 to facilitate working with rems*/
+/* The import is making the page elements bigger??? */
+
+/* @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap")  */
+
+/* IMPORTED FONTS */
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.fraunces-<uniquifier > {
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier > {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
+  font-family: "Fraunces", serif;
 }
 
 /* Height needed to centre child */
@@ -13,6 +54,7 @@
   justify-content: center;
   background-color: gray;
   height: 100vh;
+  background-color: hsl(30, 38%, 92%);
 }
 
 .card-container {
@@ -20,6 +62,16 @@
   background-color: red;
   height: 30rem;
   width: 40rem;
+  row-gap: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* Top, left and right margins */
+.margins {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2.5rem;
 }
 
 img {
@@ -27,7 +79,26 @@ img {
   /* SET max-width LATER: ; */
 }
 
-p {
-  font-size: 1.6rem;
-  width: 20rem;
+.product-text {
+  font-size: 1.4rem;
+}
+
+.product-name {
+  font-size: 2.2rem;
+}
+
+.perfume {
+  text-transform: uppercase;
+}
+
+button {
+  width: 15.5rem;
+  padding: 0.75rem 0 0.75rem 0;
+  border-radius: 1rem;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+}
+
+.description {
+  background-color: hsl(0, 0%, 100%);
 }

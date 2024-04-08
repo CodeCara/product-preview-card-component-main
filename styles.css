@@ -1,0 +1,33 @@
+/* Reset defaults; set f-size to 10 to facilitate working with rems*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+/* Height needed to centre child */
+.card-container-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  height: 100vh;
+}
+
+.card-container {
+  display: flex;
+  background-color: red;
+  height: 30rem;
+  width: 40rem;
+}
+
+img {
+  height: 100%;
+  /* SET max-width LATER: ; */
+}
+
+p {
+  font-size: 1.6rem;
+  width: 20rem;
+}

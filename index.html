@@ -31,7 +31,11 @@
     <!-- Parent needed to isolate card for flexbox -->
     <div class="card-container-parent">
       <div class="card-container">
-        <img src="images/image-product-desktop.jpg" alt="Girl in a jacket" />
+        <img
+          src="images/image-product-desktop.jpg"
+          class="main-image"
+          alt="Girl in a jacket"
+        />
         <!-- Container to rever to block display for text -->
         <div class="description">
           <div class="perfume margins">Perfume</div>
@@ -43,13 +47,18 @@
             Polge, Perfumer-Creator for the House of CHANEL.
           </div>
 
-          <div class="prices margins">
-            <span class="sale-price">$149.99</span
-            ><span class="orig-price">$169.99</span>
+          <div class="prices grid margins">
+            <div class="sale-price">$149.99</div>
+            <div class="orig-price">$169.99</div>
           </div>
 
-          <button class="cart margins">
-            <img src="images/icon-cart.svg" class="cart-icon" />Add to Cart
+          <button class="btn margins">
+            <div class="btn-content grid-2">
+              <img src="images/icon-cart.svg" class="cart-icon" /><span
+                class="cart-text"
+                >Add to Cart</span
+              >
+            </div>
           </button>
         </div>
       </div>

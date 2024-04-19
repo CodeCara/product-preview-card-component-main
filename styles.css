@@ -70,12 +70,12 @@
 
 /* Top, left and right margins */
 .margins {
-  margin-top: 1.8rem;
+  margin-top: 2rem;
   margin-left: 2rem;
   margin-right: 2.5rem;
 }
 
-img {
+.main-image {
   height: 100%;
 }
 
@@ -101,7 +101,7 @@ img {
 .sale-price {
   font-family: "Fraunces", serif;
   margin-right: 2rem;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 800;
   color: hsl(158, 36%, 37%);
 }
@@ -115,6 +115,9 @@ button {
   border: none;
   font-size: 0.8rem;
   font-family: "Montserrat", sans-serif;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2.5rem;
 }
 
 .description {
@@ -128,11 +131,35 @@ button {
 }
 
 .orig-price {
+  font-family: "Montserrat", sans-serif;
   text-decoration: line-through;
   vertical-align: middle;
-  font-weight: 900;
+  /* font-weight: 500; */
+  align-self: center;
+  font-size: 0.8rem;
 }
 
 .cart-icon {
-  height: 50%;
+  justify-self: right;
+  height: 70%;
+}
+
+.cart-text {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 1rem;
+  margin-left: 1rem;
+  font-weight: 600;
+  justify-self: left;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  grid-template-rows: 2;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
 }

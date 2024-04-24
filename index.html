@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -19,6 +19,13 @@
     />
 
     <title>Frontend Mentor | Product preview card component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <!-- <style> 
@@ -28,47 +35,60 @@
   </head>
 
   <body>
-    <!-- Parent needed to isolate card for flexbox -->
-    <div class="card-container-parent">
-      <div class="card-container">
-        <img
-          src="images/image-product-desktop.jpg"
-          class="main-image"
-          alt="Girl in a jacket"
-        />
-        <!-- Container to rever to block display for text -->
-        <div class="description">
-          <div class="perfume margins">Perfume</div>
-          <div class="product-name margins">
-            Gabrielle Essence Eau De Parfum
-          </div>
-          <div class="product-description margins">
-            A floral, solar and voluptuous interpretation composed by Olivier
-            Polge, Perfumer-Creator for the House of CHANEL.
-          </div>
+    <main>
+      <article class="card__container">
+        
+          <!--<img
+          src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQfUSPvdgoPUMqf6FlrzSsWxZg3J_Z_R4WpcatWq9kwTVNSvzVFoJcnoMlE06lVGEOmdffzYDyz6P-q63l0EwYcnCnOy5V3E5LMYp3aONzRrZXE-5dH0RKstqusXJoYu9e-PFLNlPk&usqp=CAc"
+        />-->
+          <picture class="product__image">
+            <img
+              src="images/image-product-mobile.jpg"
+              class="main__image"
+              alt="Bottle of Gabrielle perfume by Chanel on a table with some green leaves"
+            />
+          </picture>
+          <!-- Container to rever to block display for text -->
+          <div class="product__content">
+            <p class="perfume">Perfume</p>
+            <h1 class="product__name">
+              Gabrielle Essence Eau De Parfum
+            </h1>
+            <p class="product__description">
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+            
 
-          <div class="prices grid margins">
-            <div class="sale-price">$149.99</div>
-            <div class="orig-price">$169.99</div>
-          </div>
-
-          <button class="btn margins">
-            <div class="btn-content grid-2">
-              <img src="images/icon-cart.svg" class="cart-icon" /><span
-                class="cart-text"
-                >Add to Cart</span
-              >
+            <div class="prices">
+              <p class="price__sale">
+                <span class = "sr-only">Current price</span>$149.99</p>
+              <p class="price__orig">
+                <span class = "sr-only">Original price</span>$169.99</p>
             </div>
-          </button>
+          
+            <!--<button class="btn margins">
+              <div class="btn-content grid--2">
+                <img src="images/icon-cart.svg" class="cart__icon" /><p
+                  class="cart__text"
+                  >Add to Cart</p>
+              </div>
+            </button>-->
+            <button class="btn">Add to Cart</button>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+        </div>
+      </article>
+      <footer>
+        <!--
+          WHERE SHOULD THIS PART GO?
+          <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>-->
+      </footer>
+    </main>
   </body>
 </html>

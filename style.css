@@ -111,12 +111,20 @@ h1 {
   background-color: var(--clr-neutral-100);
   border-radius: 0.5rem;
   overflow: hidden;
-  max-width: 40rem;
+  max-width: 38rem;
+  /* for media query display*/
+  display: grid;
+}
+
+@media (min-width: 600px) {
+  .card__container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .product__content {
-  padding: 1.5rem;
-  border: 3px solid red;
+  padding: 2.2rem;
+
   display: grid;
   gap: 1rem;
   max-width: 100%;
@@ -124,7 +132,7 @@ h1 {
 
 .perfume {
   text-transform: uppercase;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.27rem;
   font-size: 0.8rem;
 }
 
@@ -132,6 +140,8 @@ h1 {
   font-size: 2rem;
   font-family: var(--ff-decorative);
   color: var(--clr-neutral-900);
+  letter-spacing: -0.5px;
+  font-weight: 800;
 }
 
 .price__sale {
@@ -172,10 +182,11 @@ button {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-size: 0.95rem;
-  font-weight: var(--fw-bold);
+  font-size: 0.85rem;
+  font-weight: var(--fw-regular);
 }
 
+/* 'is' to group two states together */
 button:is(:hover, :focus) {
   background-color: var(--clr-primary-500);
 }
